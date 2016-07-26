@@ -1,5 +1,6 @@
 package domain;
 
+import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -10,6 +11,7 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 @EqualsAndHashCode(of = {"nickname"})
+@Builder(toBuilder = true)
 public class SystemUser {
 
     private String id;
