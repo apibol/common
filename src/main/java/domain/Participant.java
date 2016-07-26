@@ -2,6 +2,7 @@ package domain;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.Tolerate;
 
 /**
  * @author Claudio E. de Oliveira on 28/02/16.
@@ -15,5 +16,8 @@ public class Participant {
     private String nickname;
     
     private String email;
+
+    @Tolerate
+    Participant(){}
     
 }

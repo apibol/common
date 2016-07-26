@@ -2,6 +2,7 @@ package domain;
 
 import lombok.Builder;
 import lombok.Data;
+import lombok.experimental.Tolerate;
 
 /**
  * Register request new user
@@ -17,5 +18,8 @@ public class NewUser {
     String email;
 
     String nickname;
+
+    @Tolerate
+    NewUser(){}
 
 }

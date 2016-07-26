@@ -3,6 +3,7 @@ package domain;
 import lombok.Builder;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
+import lombok.experimental.Tolerate;
 
 /**
  * Model of logged user
@@ -19,5 +20,8 @@ public class SystemUser {
     private String nickname;
 
     private String email;
+
+    @Tolerate
+    SystemUser(){}
 
 }
